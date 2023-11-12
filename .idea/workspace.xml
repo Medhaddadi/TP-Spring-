@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96b7906d-c7c5-4875-97af-0aa5b8bc1ac9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ubo/dosi/hello/interceptor/LogInterceptorAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
     </list>
@@ -348,7 +349,9 @@
       <workItem from="1698262507390" duration="5348000" />
       <workItem from="1698387468824" duration="12482000" />
       <workItem from="1698756197274" duration="5348000" />
-      <workItem from="1698764057319" duration="284000" />
+      <workItem from="1698764057319" duration="1046000" />
+      <workItem from="1699008487916" duration="3038000" />
+      <workItem from="1699015912472" duration="161000" />
     </task>
     <servers />
   </component>
