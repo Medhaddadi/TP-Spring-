@@ -7,11 +7,14 @@
     <bean id="greetingBusiness" class="fr.ubo.dosi.hello.business.GreetingBusiness">
     </bean>
     <bean id="loggingInterceptor" class="fr.ubo.dosi.hello.interceptor.LoggingInterceptor"/>
-
-    <!-- Configurez votre aspect -->
-    <aop:config>
-        <aop:pointcut id="allMethods" expression="execution(* fr.ubo.dosi.hello.*.*(..))"/>
-        <aop:advisor advice-ref="loggingInterceptor" pointcut-ref="allMethods"/>
-    </aop:config>
+    <bean id="logInterceptorAdvice" class="fr.ubo.dosi.hello.interceptor.LogInterceptorAdvice"/>
+    <bean id="logAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="patterns">
+            <list>
+                <value>.*</value>
+            </list>
+        </property>
+        <property name="advice" ref="logInterceptorAdvice" />
+    </bean>
 </beans>
 
